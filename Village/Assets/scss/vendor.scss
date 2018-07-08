@@ -1,0 +1,38 @@
+/*! vendor.css */
+@import "variables";
+@import "colors";
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import "custom/helpers";
+@import "custom/variables";
+@import "custom/mixins";
+
+@import "custom/cropper";
+@import "custom/datatables";
+@import "custom/datatables-buttons";
+@import "custom/datatables-colreorder";
+@import "custom/datatables-fixedheader";
+@import "custom/datatables-responsive";
+@import "custom/datatables-rowreorder";
+@import "custom/datatables-scroller";
+@import "custom/bootstrap-tables";
+@import "custom/datepicker";
+@import "custom/sliders";
+@import "custom/timepicker";
+@import "custom/toastr";
+
+
+@import "node_modules/animate.css/animate";
+@import "node_modules/cropper/dist/cropper";
+@import "node_modules/flexslider/flexslider";
+@import "node_modules/jqvmap/dist/jqvmap";
+@import "node_modules/metisMenu/dist/metisMenu";
+
+@import "node_modules/bootstrap-select/sass/bootstrap-select.scss";
+@import "node_modules/flag-icon-css/sass/flag-icon.scss";
+@import "node_modules/select2/src/scss/core.scss";
+@import "node_modules/select2-bootstrap-theme/src/select2-bootstrap.scss";
+
+@import "elephant.scss";

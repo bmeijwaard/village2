@@ -1,0 +1,39 @@
+﻿@model Village.Models.Example.ExampleViewModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+@await  Html.PartialAsync("_Titlebar", new TitlebarViewModel(ViewData["Title"].ToString(), "Forms presented below show how the elements of a form can be displayed differently."))
+<div class="row">
+    <div class="col-sm-12">
+        <form class="form form-horizontal" method="post">
+            @Html.HiddenFor(m => m.Id)
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="col-sm-3 col-md-4 control-label" placeholder="Name...">Name</label>
+                <div class="col-sm-6 col-md-4">
+                    <input asp-for="Name" type="text" class="form-control">
+                </div>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+                    @*<label class="custom-control custom-control-primary custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" checked="">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-label">Keep me signed in</span>
+                </label>*@
+                    <button class="btn btn-primary pull-right" type="submit">Add name</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+                    <a class="btn btn-default pull-left" asp-action="Index" asp-controller="Home">Home</a>
+                    <a class="btn btn-default pull-right" asp-action="Index" asp-controller="Example">Example Index</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

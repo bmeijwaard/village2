@@ -1,0 +1,31 @@
+{
+  "extends": "google",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "spaced-comment": [
+      "error",
+      "always",
+      { "markers": [ "/" ] }
+    ],
+    "comma-dangle": [ "error", "never" ],
+    "max-len": [
+      "error",
+      { "code": 120 }
+    ],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": false,
+          "MethodDefinition": false,
+          "ClassDeclaration": false,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": false
+        }
+      }
+    ]
+  }
+}

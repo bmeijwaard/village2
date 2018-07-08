@@ -1,0 +1,9 @@
+.vs
+Village/node_modules
+Village/bower_components
+Village/wwwroot
+Village/package-lock.json
+Village/bin
+Village/obj
+Village/Components/**/*.js
+Village/Components/**/*.js.map

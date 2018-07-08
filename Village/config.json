@@ -1,0 +1,159 @@
+﻿{
+  "root": "./",
+  "deployment": {
+    "local": {
+      "path": "build"
+    },
+    "remote": {
+      "host": "YOUR HOST"
+    }
+  },
+  "versioning": {
+    "files": [
+      "./package.json"
+    ]
+  },
+  "dotnet": {
+    "https": "https://localhost:44315/",
+    "http": "http://localhost:60449/",
+    "port": 60449,
+    "useHttps": true,
+    "csproj": "Village.csproj"
+  },
+  "assets": {
+    "scss": {
+      "source": [
+        "Assets/scss/vendor.scss"
+      ]
+    },
+    "css": {
+      "source": [
+      ],
+      "dest": "wwwroot/css"
+    },
+    "js": {
+      "source": [
+        "Assets/js/application.js"
+      ],
+      "dest": "wwwroot/js"
+    },
+    "fonts": {
+      "source": [
+        "Assets/fonts/**/*"
+      ],
+      "dest": "wwwroot/fonts"
+    },
+    "img": {
+      "source": [
+        "Assets/img/**/*"
+      ],
+      "dest": "wwwroot/img"
+    },
+    "clean": [
+      "wwwroot/fonts",
+      "wwwroot/img",
+      "wwwroot/css",
+      "wwwroot/js"
+    ]
+  },
+  "stylesheets": {
+    "base": "Styles/main.scss",
+    "files": "Styles/**/*",
+    "dest": "wwwroot/css"
+  },
+  "javascript": {
+    "source": "Components/**/*.js",
+    "dest": "wwwroot/js"
+  },
+  "razor": {
+    "source": "Views/**/*.cshtml"
+  },
+  "plugins": {
+    "styles": [
+    ],
+    "javascript": [      
+      "node_modules/angular/angular.js",
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/jquery-ui/ui/widget.js",
+      "node_modules/jquery-validation/dist/jquery.validate.js",
+      "node_modules/jquery-validation/dist/additional-methods.js",
+      "node_modules/blueimp-canvas-to-blob/js/canvas-to-blob.js",
+      "node_modules/blueimp-file-upload/js/jquery.iframe-transport.js",
+      "node_modules/blueimp-file-upload/js/jquery.fileupload.js",
+      "node_modules/blueimp-file-upload/js/jquery.fileupload-process.js",
+      "node_modules/blueimp-file-upload/js/jquery.fileupload-image.js",
+      "node_modules/blueimp-file-upload/js/jquery.fileupload-ui.js",
+      "node_modules/blueimp-load-image/js/load-image.js",
+      "node_modules/blueimp-tmpl/js/tmpl.js",
+      "node_modules/bootstrap/dist/js/bootstrap.js",
+      "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js",
+      "node_modules/bootstrap-select/js/bootstrap-select.js",
+      "node_modules/bootstrap-table/dist/bootstrap-table.js",
+      "node_modules/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js",
+      "node_modules/chart.js/dist/Chart.js",
+      "node_modules/countup.js/dist/countUp.js",
+      "node_modules/cropper/dist/cropper.js",
+      "node_modules/datatables.net/js/jquery.dataTables.js",
+      "node_modules/datatables.net-bs/js/dataTables.bootstrap.js",
+      "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
+      "node_modules/datatables.net-buttons/js/buttons.colVis.js",
+      "node_modules/datatables.net-buttons/js/buttons.flash.js",
+      "node_modules/datatables.net-buttons/js/buttons.html5.js",
+      "node_modules/datatables.net-buttons/js/buttons.print.js",
+      "node_modules/datatables.net-buttons-bs/js/buttons.bootstrap.js",
+      "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js",
+      "node_modules/datatables.net-colreorder-bs/js/colReorder.bootstrap.js",
+      "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.js",
+      "node_modules/datatables.net-fixedheader-bs/js/fixedHeader.bootstrap.js",
+      "node_modules/datatables.net-responsive/js/dataTables.responsive.js",
+      "node_modules/datatables.net-responsive-bs/js/responsive.bootstrap.js",
+      "node_modules/datatables.net-rowreorder/js/dataTables.rowReorder.js",
+      "node_modules/datatables.net-rowreorder-bs/js/rowReorder.bootstrap.js",
+      "node_modules/datatables.net-scroller/js/dataTables.scroller.js",
+      "node_modules/datatables.net-scroller-bs/js/scroller.bootstrap.js",
+      "node_modules/datepair.js/dist/datepair.js",
+      "node_modules/datepair.js/dist/jquery.datepair.js",
+      "node_modules/flexslider/jquery.flexslider.js",
+      "node_modules/gmaps/gmaps.js",
+      "node_modules/hc-sticky/jquery.hc-sticky.js",
+      "node_modules/imagesloaded/imagesloaded.pkgd.js",
+      "node_modules/jquery.hotkeys/jquery.hotkeys.js",
+      "node_modules/inputmask/dist/jquery.inputmask.bundle.js",
+      "node_modules/jquery-slimscroll/jquery.slimscroll.js",
+      "node_modules/jqvmap/dist/jquery.vmap.js",
+      "node_modules/js-cookie/src/js.cookie.js",
+      "node_modules/jquery-timepicker/jquery.timepicker.js",
+      "node_modules/masonry-layout/dist/masonry.pkgd.js",
+      "node_modules/jquery-match-height/dist/jquery.matchHeight.js",
+      "node_modules/metismenu/dist/metisMenu.js",
+      "node_modules/nouislider/distribute/nouislider.js",
+      "node_modules/numeral/numeral.js",
+      "node_modules/peity/jquery.peity.js",
+      "node_modules/select2/dist/js/select2.js",
+      "node_modules/toastr/toastr.js",
+      "node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js",
+      "node_modules/waypoints/lib/jquery.waypoints.js",
+      "node_modules/waypoints/lib/shortcuts/sticky.js",
+      "node_modules/wnumb/wNumb.js",
+      "node_modules/block-ui/jquery.blockUI.js",
+      "Assets/js/bootstrap/transition.js",
+      "Assets/js/bootstrap/alert.js",
+      "Assets/js/bootstrap/button.js",
+      "Assets/js/bootstrap/carousel.js",
+      "Assets/js/bootstrap/collapse.js",
+      "Assets/js/bootstrap/modal.js",
+      "Assets/js/bootstrap/tooltip.js",
+      "Assets/js/bootstrap/popover.js",
+      "Assets/js/bootstrap/scrollspy.js",
+      "Assets/js/bootstrap/tab.js",
+      "Assets/js/bootstrap/affix.js",
+      "Assets/js/custom/animation.js",
+      "Assets/js/custom/input.js",
+      "Assets/js/custom/chart.js",
+      "Assets/js/custom/slider.js",
+      "Assets/js/custom/validate.bootstrap.js",
+      "Assets/js/custom/validate.material.js",
+      "Assets/js/matchmedia.js"
+    ]
+  }
+}

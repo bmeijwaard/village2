@@ -1,0 +1,36 @@
+﻿{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "tslint-language-service"
+      } 
+    ],
+    "alwaysStrict": false,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "outDir": "./components",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "target": "es5",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "types": [
+      "angular",
+      "jquery",
+      "datatables.net",
+      "datatables.net-buttons",
+      "select2"
+    ]
+  },
+  "include": [
+    "components"
+  ],
+  "exclude": [
+    "bin",
+    "node_modules",
+    "wwwroot"
+  ]
+}

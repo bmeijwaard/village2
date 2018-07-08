@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Controllers\home.controller.ts" />
+    <None Remove="Components\Controllers\home.scope.ts" />
+    <None Remove="Components\Core\guid.ts" />
+    <None Remove="Components\Core\Scope\iscope.ts" />
+    <None Remove="Components\Directives\datatable.directive.ts" />
+    <None Remove="Components\module.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <TypeScriptCompile Include="Components\Controllers\home.controller.ts" />
+    <TypeScriptCompile Include="Components\Controllers\home.scope.ts" />
+    <TypeScriptCompile Include="Components\Core\Helpers\guid.ts" />
+    <TypeScriptCompile Include="Components\Core\Scope\iscope.ts" />
+    <TypeScriptCompile Include="Components\Directives\datatable.directive.ts" />
+    <TypeScriptCompile Include="Components\module.ts" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
